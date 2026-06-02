@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- today i learn forms
+    -form is used to collect data from user
+    -tags used in form  
+        1.<form></form>
+            it is main tag used to create form.
+        2.<input>
+            it is used to get input from users ,ther aree many type of inputs such as text,file,button,checkbox,radio button,date,fileselect,submit,image,etc.
+        3.<label></label>
+            it is used to set label to input fields.
+            the for attribute of label and is of input must be same.
+        4.<select></select>
+            it is used to create drop downlist
+            there are many options present in selector
+        5.<button></button>
+            it is ued to submit from we can also create utton from input tag by usin type submit
+        6.<fieldset></fieldset>
+            it is like a container to store multiple element in it
+        7.<legend></legend>
+            it is usen in the fieldset 
+            it is used to give context/title to fieldset
+        8.<option></option>
+            it is used in select tag to create multiple option
+
+
+
+        Action attribute is used to deccide what to do with data. -->
+
+
+
+
+
+        <!-- <form>
+
+
+            <label for="name" >Enter name</label>
+            <input type="text" id="name" placeholder="Name">
+            <br/>
+            <br/>
+
+            <label for="pass">Enter password</label>
+            <input type="password" id="pass" placeholder="pass">
+            <br/>
+            <br/>
+
+            <input type="submit" id="submit">
+            <br/>
+            <br/>
+
+            <select id="country">
+                <option>India</option>
+                <option>USA</option>
+            </select>
+
+            <fieldset>
+                <legend>Gender</legend>
+                
+                <input type="radio" id="Male" name="gender">
+                <label for="Male">Male</label>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">female</label>
+
+                <input type="radio" id="other" name="gender">
+                <label for="other">other</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                
+                <input type="checkbox" id="HTML">
+                <label for="HTML">HTML</label>
+
+                <input type="checkbox" id="css">
+                <label for="css">css</label>
+
+                <input type="checkbox" id="javascript">
+                <label for="javascript">javascript</label>
+
+            </fieldset>
+
+            <label for="textarea">Give feedback</label>
+            <br/>
+            <input type="textarea" id="textarea" placeholder="Give your valuable feedback"> 
+            
+            <br/>
+            <br/>
+
+            <label for="file">upload Reume:</label>
+            <input type="file" id="file" placeholder="choose file"> 
+            <br/>
+            <br/>
+
+
+            <label for="calender">Choose D.O.B:</label>
+            <input type="date" id="calender">
+            <br/>
+            <br/>
+
+            <label for="image">image</label>
+            <input type="image" src="C:\Users\Lenovo\Desktop\Hariom\97019.jpg" id="image" alt="Click here">
+            <br/>
+            <br/>
+            <button>Reset</button>
+
+        </form> -->
+
+
+        <h2>Complex form</h2>
+
+        <form>
+            <fieldset>
+
+                <legend>Personal information</legend>
+                <label for="name">Enter name:</label>
+                <input type="text" id="name" placeholder="Shivam Thosar">
+
+                <label for="Email">Enter email:</label>
+                <input type="email" id="Email" placeholder="shivathosar@gmail.com">
+
+                <label for="phone">Enter Phone</label>
+                <input type="tel" id="phone" placeholder="9922852921">
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+
+                <span>Gender</span>
+
+                <input type="radio" id="male" name="gender">
+                <label for="male">male</label>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">female</label>
+
+                <label for="Country">Country</label>
+                <select name="country" id="country">
+                    <option value="India">India</option>
+                    <option value="US">united state</option>
+                </select>
+
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Adress 
+
+                <label for="street">street:</label><input type="text" id="street" name="address">
+                <label for="city">City:</label><input type="text" id="city" name="address">
+                <label for="state">State:</label><input type="text" id="state" name="address">
+                <label for="zipcode">Zip Code:</label><input type="text" id="zipcode" name="address"></legend>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Other Information</legend>
+
+                <label for="Comments">Comments</label>
+                <textarea name="Comments" id="Cooments" placeholder="write here something" cols="10" rows="5"></textarea>
+                <label for="Terms">I agree to the term and service </label>
+                <input type="checkbox" id="Terms">
+                <br/>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+
+
+</body>
+</html>
