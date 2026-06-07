@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopnow-login</title>
+    <link rel="stylesheet" href="styleloginpg.css">
+    <link rel="shortcut icon" href="brandlogo.png" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <img src="brandlogo.png" alt="logo" id="logo">
+        <span id="companyname">ShopNow</span>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainlayout">
+
+        
+
+        <div id="formcontainer">
+            <form >
+                <h1 class="formtitle">ShopNow Registration</h1>
+                
+                <label for="name">Enter Name:</label>
+                <input type="text" placeholder="Shivam Thosar" id="name" >
+
+                <label for="email">Enter Email:</label>
+                <input type="email" placeholder="shivamthosar@gmail.com" id="email">
+
+                <label for="name">Enter contact no:</label>
+                <input type="text" placeholder="9192XXXXXX" id="phone" >
+
+                <label for="pass">Enter password:</label>
+                <input type="password" placeholder="password" id="pass" >
+
+                <label for="name">Age:</label>
+                <input type="range" placeholder="Shivam Thosar" id="age"  max="100" min="10" >
+
+                <label>Interest In:</label>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="Clothes">
+                    <label for="Clothes">Clothes</label>
+
+                    <input type="checkbox" id="Accesserie">
+                    <label for="Accesserie">Accessories</label>
+
+                    <input type="checkbox" id="Electronics">
+                    <label for="Electronics">Electronics</label>
+
+                    <input type="checkbox" id="alltype">
+                    <label for="alltype">All Categories</label>
+                </div>
+
+                <label>Gender:</label>
+
+                <div class="radio-group">
+                    <input type="radio" id="male" name="Gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="Gender">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="others" name="Gender">
+                    <label for="others">Others</label>
+                    </div>   
+
+                <label for="Country">Country</label>
+                <select name="Country" id="Country">
+                    <option disabled selected>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="China">China</option>
+                    <option value="others">Others</option>
+                </select>
+
+                <div class="term">
+                <input type="checkbox"  id="term&condition" value="0" >
+                <label for="term&condition">I accept all terms and services.</label>
+                </div>
+                <input type="submit"  id="submitbtn" value="submit" >
+                
+                
+
+            
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
