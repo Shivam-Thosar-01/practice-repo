@@ -1,0 +1,180 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f8ff;
+    color:#333;
+    min-height:100vh;
+}
+
+/* Header */
+#header{
+    background:linear-gradient(135deg,#0a1f44,#1e3c72);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+#logo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:white;
+}
+
+#pageheading{
+    font-size:2rem;
+}
+
+/* Main Layout */
+#mainlayoutaupg{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* Campus Image */
+#companyCampusimg{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+#companyCampusimg img{
+    width:100%;
+    max-height:500px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Company Details */
+#companydetails{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+#companydetails h2{
+    color:#0a1f44;
+    margin-bottom:15px;
+}
+
+#companydetails p{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+/* Contact Section */
+#contactusinfo{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+#contactusinfo p{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#0a1f44;
+    margin-bottom:15px;
+}
+
+#contactusinfo address{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#contactusinfo a{
+    text-decoration:none;
+    color:#1e3c72;
+    font-weight:500;
+}
+
+#contactusinfo a:hover{
+    color:#2563eb;
+}
+
+/* FAQ Section */
+#QueAboutZompany{
+    margin-bottom:40px;
+}
+
+fieldset{
+    border:2px solid #1e3c72;
+    border-radius:15px;
+    padding:25px;
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+legend{
+    padding:0 10px;
+    font-weight:bold;
+    color:#0a1f44;
+}
+
+details{
+    margin:15px 0;
+    border:1px solid #dbeafe;
+    border-radius:10px;
+    padding:15px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:#1e3c72;
+}
+
+details p{
+    margin-top:10px;
+    line-height:1.6;
+    f
+}
+
+/* Footer */
+#footeraboutuspg{
+    background:#0a1f44;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+#footeraboutuspg p{
+    margin:5px 0;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    #header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #pageheading{
+        font-size:1.5rem;
+    }
+
+    #mainlayoutaupg{
+        width:95%;
+    }
+}
