@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container{
+            margin: 20px;
+            height: 80vh;
+            width: 100vh;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            
+
+            background-color: beige;
+        }
+
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid brown;
+            margin: 10px;
+        }
+        #box1{
+            background-color: aqua;
+            order: 400;
+            flex-shrink: 4;
+            align-self: center;
+        }
+        #box2{
+            background-color: rgb(26, 138, 80);
+            order: 500;
+            align-self: end;
+            flex-grow: 10;
+        }
+
+        #box3{
+            background-color: rgb(243, 36, 18);
+            order: 100;
+            align-self: end;
+        }
+        #box4{
+            background-color: rgb(32, 15, 186);
+            order: 200;
+            align-self: center;
+        }
+        #box5{
+            background-color: rgb(186, 22, 204);
+            order:300;
+            align-items: start;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+    toay i learn a flex box it is known as a 1 dimension layout
+        flex box is used to store element in flow
+        there are some property used for flex
+
+        1.for containner
+            1.display:flex;  -to make container flexible
+            2.flex-direction:(row,column,row-reverse,column-reverse)    -it is udes to spacify a dicrection of flexbox
+            3.justify-content:(start,end,center,space,space-around,space-evenly,space-between) it  is used to alig item according to main axis
+            4.align-content:(start,end,center)
+            5.flex-wrap:(wrap,no-wrap,none) it is allow element to change the position if it does not have evenspace,if it is not set to wrap then element start shrink even space is availabe in does not change position
+            align-content:(start,end,center)it is udes to  align conntent according to cross axis
+
+        2.for flex items
+            1.order:100;    -it is ued to order elements.value of this property musut in numbers;
+            2.align-self:start; -it is ued to move element according to  cross axis
+            3.flex-basis:it is used to set the dimension of flex element;
+            4.flex-shrink:4 ;its value give in a number ,it spacify the speed of element shrink with respect to other f;ex items
+            5.flex-grow:5:   ;its value give in a number ,it spacify the speed of element grow with respect to other flex items
+
+        *
+        align-item         -it work with cross axis
+        justify-content    - it work with main axis
+
+        when flex direction is row then main axis is horizontal,and cross it vertical
+        when flex direction is column then main axis is  vertical and cross axis is horizontal;
+
+    -->
+
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+    </div>
+</body>
+</html>

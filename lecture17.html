@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 150px;
+            margin: 10px;
+            border: 1px solid brown;
+
+        }
+
+        .container1{
+            border: 1px solid black;
+            height: 1000px;
+            margin: 5px;
+        }
+
+        .container2{
+            border: 1px solid black;
+            height :600px;
+            margin: 5px;
+        }
+
+        #imgc1{
+            position: sticky;
+            top: 88px;
+        }
+
+        #imgc2{
+            position: absolute;
+            top: 100px;
+            left: 200px;
+
+        }
+        #imigc3{
+            position: static;
+            left: 200px;
+        }
+
+        #imgc4{
+            position: fixed;
+            top: 200px;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- in this practical i learn about position property
+    1.static        -by default the element have static proprty.In static we cannot appply z-index,in this property top,bottom,lefft&right does not work.
+    2.relative      -it is relative to a current window(laptop screen),it support 4 property top,bottom,left&right.,element gap  is maintained.
+    3.absolute      -it is ued for oveerlay element,it does not mainntain gap.it support property top,bottom,left&right.It is positioned to its closet positioned ancestor.
+    4.fixed         -it is work on overall window(screen).it support property top,bottom,left,right.it hide content below it.
+    5.sticky        -it is corrosponding to its parent .it support top,bottom,left&right.
+    -->
+
+
+    <div class="container1">
+        <img src="lamp.jpg" alt="lampimg" id="imgc1"> 
+        <img src="pillow.jpg" alt="pillow" id="imgc2">
+        <img src="smartphone.jpg" alt="smartphone" id="imgc3">
+        <img src="jeans.webp" alt="jeans" id="imgc4">
+    </div>
+    
+    <div class="container2">
+        <img src="lamp.jpg" alt="lampimg" id="imgc21"> 
+        <img src="pillow.jpg" alt="pillow" id="imgc22">
+        <img src="smartphone.jpg" alt="smartphone" id="imgc23">
+        <img src="jeans.webp" alt="jeans" id="imgc24">
+    </div>
+</body>
+</html>
