@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query in css</title>
+    <style>
+        *{
+            padding:0%;
+            margin: 0%;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: beige;
+            border: 4px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #box1{
+            height:200px ;
+            width: 200px;
+            border: 1px solid brown;
+            background-color: darkkhaki;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        #box2{
+            display: flex;
+            flex-direction: row;
+        }
+        #box21{
+              height:200px ;
+            width: 200px;
+            border: 1px solid brown;
+            background-color: darkkhaki;
+            margin: 10px;
+            padding: 5px;
+        }  
+        
+        #box22{
+            height:200px ;
+            width: 200px;
+            border: 1px solid brown;
+            background-color: darkkhaki;
+            margin: 10px;
+            padding: 5px;
+        }   
+
+
+
+        @media (min-width: 200px) and (max-width: 700px) {
+
+            .container {
+                flex-direction: column;
+                width: 500px;
+                height: 400px;
+                flex-wrap: nowrap;
+                overflow: hidden;
+            }
+            
+            #box1{
+                height: 38%;
+                width: 45%;
+                flex-shrink: 2;
+            }
+            #box2{
+                flex-direction: row;
+                height: 38%;
+                width: 45%;
+            }
+
+            #box21{
+                flex-shrink: 2;
+            }  
+        
+            #box22{
+                flex-shrink: 2;
+            } 
+        }
+
+
+
+        @media (min-width: 0px) and (max-width: 200px) {
+
+            .container {
+                flex-direction: column;
+                width: 100px;
+                height: 400px;
+                flex-wrap: nowrap;
+                overflow: hidden;
+            }
+            
+            #box1{
+                
+                height: 38%;
+                width: 45%;
+                flex-shrink: 2;
+            }
+            #box2{
+                flex-direction: column;
+                height: 38%;
+                width: 22%;
+            }
+
+            #box21{
+                flex-shrink: 2;
+                width: 40%;
+            }  
+        
+            #box22{
+                flex-shrink: 2;
+                width: 40%;
+            } 
+        }
+        </style>
+</head>
+<body>
+        <!--  in this lecture i learn about a media query
+              it is ued to make a responsive website
+              it  uses a operator   -
+              1.and     it is ued to apply more than one feature on media query
+              2.or      it will execute to all given feature
+              3.not     it will negate the feature
+              4.only    
+
+              syntax
+              @media (min-width:600px){
+                here is all styling
+              }
+        -->
+
+
+    <div class="container">
+        <div id="box1">here is div 1</div>
+        <div id="box2">
+            <div id="box21">here is div2 box 1 </div>
+            <div id="box22">here is div2 box 2</div>
+     </div>
+        
+    </div>
+</body>
+</html>

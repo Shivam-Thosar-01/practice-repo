@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        body{
+            background-color: rgb(5, 2, 28);
+        }
+
+        .container{
+            height: 80vh;
+            width: 90vw;
+            margin: 4%;
+            background-color:rgb(9, 5, 65);
+            box-shadow: inset 4px 4px 100px 20px rgba(1, 0, 14, 0.867),4px 4px 100px 50px rgba(1, 0, 14, 0.867);
+            border-radius: 5%;
+        }
+
+        #slider{
+            height: 5%;
+            width: 20%;
+            background-color: rgb(103, 6, 6);
+            position: relative;
+            top:480px;
+            left:10px;
+            animation-name: slidermovement;
+            animation-delay: 0s;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+            border: 5px solid rgb(103, 6, 6);
+            border-radius: 10px;
+            box-shadow: 4pxp 4px 30px 10px rgb(103, 6, 6);
+
+
+        }
+
+        @keyframes slidermovement {
+            0%{
+                left:0px;
+            }
+            100%{
+                left:72vw;
+            }
+        }
+
+        #ball{
+            height: 15px;
+            width: 15px;
+            position: relative;
+            left: 200px;
+            top: 30px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: ballmovement;
+            animation-delay: 0s;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes ballmovement {
+            0%{
+                top: 30px;
+            }
+            100%{
+                top: 480px;
+            /* }
+            50%{
+                top: 30px;
+            }
+            100%{
+                top: 480px;
+                left: 400px;
+            } */
+            
+        }
+
+       
+    </style>
+</head>
+    <body>
+        <!-- 
+            when element move from a one style to anothe style then it is called a animation
+            In this lecture i learn a animation ina css 
+            first to which element you want to do animation gove it a animation name,then by using this animation name write a @keyframes 
+            property of animation:
+            1.animation-name                -it is ued to give name toa animation
+            2.aniimation-duration           -it speccify a time requiredd for a animation completion
+            3.animation-delay               -it specify a delay to start a animation
+            4.animation-timing-function     -it specify a function type (ease,ease-in,ease-ouut,ease-in-out,)
+            5.animation-iteration-count     -it specify a iteration count
+            6.animation                     -it is short hand of animation
+            7.animation-play-state          -property sets whether an animation is running or paused. Resuming a paused animation will start the animation from where it left off at the time it was paused, rather than starting over from the beginning of the animation sequence.
+            8.animmation-fill-mode          -how a CSS animation applies styles to its target before and after its execution.
+            9.animation-direction           -roperty sets whether an animation should play forward, backward, or alternate back and forth between playing the sequence forward and backward.
+        
+                /* @keyframes duration | easing-function | delay |
+                    iteration-count | direction | fill-mode | play-state | name */
+                    animation: 3s ease-in 1s 2 reverse both paused slide-in;
+
+        -->
+
+        <div class="container">
+            <div id="ball">
+            </div>
+            <div id="slider">
+            </div>
+        </div>
+        
+    </body>
+</html>
