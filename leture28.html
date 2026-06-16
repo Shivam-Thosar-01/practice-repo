@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 1px solid orange;
+            background-color: #aefedc;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 2rem;
+            align-items: end;
+        }
+
+        div{
+            
+            background-color: rgba(52, 52, 151, 0.604);
+            border: 1px solid brown;
+            align-items: stretch;
+            height: 200px;
+            width: 200px;
+        }
+        #box4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: aquamarine;
+        }
+
+        #box1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #box8{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Today i learn about a css grid
+    it is a layout used to organize a element in web page
+    to create a gride you need to reate a container give it display as a grid
+    ontainer property
+    1.display:grid
+    2.gap:2rem
+    3.row-gap:2rem
+    4.col-gap:2rem
+    5.align-items:(center,start,end,streach)
+    6.justify-item:(center,start,end,streach)
+    7.place-item:(center,start,end,streach)
+    8.grid-templet-row:200px 200px 200px;
+        it specify a here 3 row are created each of 200px
+    9.grid-templet-column:200px 200px 200px;
+        it specify a here 3 column are created each of 200px
+    10.grid-templet-row:repeat(3,4fr)
+        3 is a number of a row 4fr is a size of each row 
+        "fr" it work as a if the grid container has a height 4000px then the each row get 1000px height
+
+    to extande a size of grid element use
+    1.grid-column-start:(column number)
+    2.grid-column-end:(column number)
+    3.grid-row-start:(row number)
+    4.grid-row-end:(row number)
+
+    item property
+    1.
+    -->
+    <div class="container">
+        <div id="box1">box 1</div>
+        <div id="box2">box 2</div>
+        <div id="box3">box 3</div>
+        <div id="box4">box 4</div>
+        <div id="box5">box 5</div>
+        <div id="box6">box 6</div>
+        <div id="box7">box 7</div>
+        <div id="box8">box 8</div>
+    </div>
+</body>
+</html>
