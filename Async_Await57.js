@@ -1,7 +1,14 @@
 // AWAIT
 //     it is used to represent the asynchronous code in the form of the synchronous code
 
+    // async function API() {
+    //     let data= await fetch("jn9dfsbcbiudscbicjubcjujbeddkibdncjhnnnnnnnnnnnnnnnnnnnnnnn");
+    // }
+
+
+    // for post on API ,Api url Requiredand  to  option required
 // async function
+    // in side this asynchronous code is written
 //     async function shiv(params) {
 //         //asynchronous code
 //     }
@@ -21,6 +28,4 @@ console.log("Hariom Ashok Thsar");
 
 
 
-async function API() {
-    let data=fetch("jn9dfsbcbiudscbicjubcjujbeddkibdncjhnnnnnnnnnnnnnnnnnnnnnnn")
-}
+
